@@ -9,11 +9,11 @@ code-fold: true
 ---
 
 ```{r}
+#| include: false
 library(tidyverse)
 library(ggplot2)
 library(urbnmapr)
 
-#| include: false
 ds <- read.csv("https://data.wa.gov/api/views/f6w7-q2d2/rows.csv?accessType=DOWNLOAD")
 
 ##remove alaska and hawaii and BC

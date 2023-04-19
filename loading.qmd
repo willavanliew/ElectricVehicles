@@ -23,7 +23,7 @@ library(DT)
 Equity.Analyser <- function(x) {
   render("Parameters.qmd", 
          params = list(state = x),
-         output_file = paste0("~/Documents/DS-Masters/CWD/ParameterizedMarkdown/ElectricVehicles/files/",x,".html"))
+         output_file = paste0("Parameters_files/",x,".html"))
 }
 
 ds <- read.csv("https://data.wa.gov/api/views/f6w7-q2d2/rows.csv?accessType=DOWNLOAD") |>

@@ -42,7 +42,7 @@ States <- States %>%
            state_code == "DC" ~ "Washington DC",
            state_code == "BC" ~ "British Columbia",
            TRUE ~ state_full),
-         link = paste0("./files/", state_code,".html"),
+         link = paste0("Parameters_files/",state_code, ".html"),
          report = paste0('<a  target=_blank href=\'', link, '\' >', state_full,'</a>' ))
 ```
 
